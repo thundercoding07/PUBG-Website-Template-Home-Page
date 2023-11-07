@@ -1,0 +1,799 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* #################### html styling elements ############### */
+:root{
+    font-size: 62.5%;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.07;
+}
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.10em;
+    font-weight: 500;
+}
+/* ############### utility classes ########## */
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0% auto;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.lt-space{
+    letter-spacing: 0.1em;
+}
+.btn-primary{
+    background-color: white;
+    border-radius: 10em;
+    letter-spacing: 0.15em;
+}
+.btn-primary:hover{
+    background: #ddd;
+}
+.btn-secondary{
+    border: 2px solid red;
+    border-radius: 1.5em;
+    color: red;
+    background: white;
+     letter-spacing: 0.15em;
+}
+.btn-secondary:hover{
+    background: #fcf3f2;
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+.sm-heading{
+    font-size: 1.8rem;
+}
+.text-red{
+    color: #e63946;
+}
+.text-light{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333333;
+}
+.text-gray{
+    color: #555555;
+}
+
+.bg-dark{
+    background-color: #263238;
+}
+/* ################### header styling#################### */
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+header{
+    height: 97vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url('../IMG/main.jpg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.navbar{
+    padding: 0.5rem;
+
+}
+   
+.navbar .logo{
+    letter-spacing: 0.2em;
+    float: left;
+}
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+.navbar::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/* ################### header content styling ################ */
+
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+
+}
+.navbar a:link,
+.navbar a:visited{
+    color:white;
+}
+.navbar a{
+    padding-bottom: 0.3rem;
+    margin: 0 auto;
+}
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+
+.header-content{
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin:auto 0%;
+}
+.header-content p{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* ##################### section styling ############### */
+.section{
+    background: #ddd;
+    padding: 10rem 0;
+}
+
+.row{
+    height: 350px;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+ 
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row2{
+    margin-bottom: 10rem;
+}
+
+.row3{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box,
+.row2 .text-box{
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box,
+.row1 .text-box{
+    float: right;
+    width: 50%;
+}
+
+.row3 .img-box,
+.row4 .text-box{
+    float: left;
+    width: 50%;
+}
+
+.row4 .img-box,
+.row3 .text-box{
+    float: right;
+    width: 50%;
+}
+
+.row .img-box{
+    height: 100%;
+}
+.row .text-box{
+    background-color: white;
+    height: 100%;
+    padding: 2.5rem;
+}
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ############################### feature container styling #################################### */
+
+.features{
+    padding: 10rem 0;
+}
+
+.box-wrapper{
+    box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521);
+}
+.box{
+    height: 250px;
+    padding: 2rem;
+}
+
+.box1{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.box2{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+}
+
+.box3{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear:both;
+}
+
+.box1, .box3{
+    background-color: #263238;
+}
+
+/* ########################## footer styling #####################3 */
+
+.footer{
+    background-color: #263238;
+    color:#f4f4f4;
+    padding: 0rem;
+    text-align: center;
+}
+
+.social-media-links i{
+    margin: 2rem;
+}
+
+/* ######################## about page styling ####################### */
+
+.about{
+    padding: 5rem;
+}
+
+.about-heading{
+    border-bottom: 5px solid #e63946;
+    letter-spacing: 0.2em;
+}
+
+.about-wrap{
+    margin-top: 2rem;
+}
+
+.about-wrap .left{
+    float: left;
+    width: 50%;
+    text-align:center;
+}
+
+.about-wrap .right{
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+.about-wrap::after{
+    content: '';
+    display: block;
+    clear:both;
+}
+ .about-wrap li::before{
+     content:'\2713';
+     color: #e63946;
+     padding-right: 1rem;
+ }
+ .shakya{
+        height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)) , url('../IMG/white.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+ }
+ .best{
+     letter-spacing: 0.3em;
+     font-weight: 500;
+     border-bottom: 4px solid #e63946;
+     margin-top: 1rem;
+     width: 240px;
+ }
+
+ /* ######################### count styling ######################### */
+
+
+ .count-box{
+     margin-top: 1.5rem;
+
+ }
+
+ .count1{
+     float: left;
+     width: 25%;
+     text-align: center;
+ }
+
+ .count2{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.count3{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.count4{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.count span{
+    font-weight: 700;
+}
+
+.count-box::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+ /* ########################### bannner styling ########################## */
+
+ .banner-style{
+    background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    color: #f4f4f4;
+    padding: 0.5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+    margin-top: 3rem;
+    border-radius: 100px;
+ }
+ .banner-left{
+    float: left;
+    width: 55%;
+    padding: 1rem;
+ }
+
+ .banner-right{
+    float: right;
+    width: 45%;
+    text-align: right;
+    display: inline-block;
+    padding: 1.5rem; 
+ }
+
+ .cta-line{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+ }
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.7rem;
+    color: #f4f4f4;
+    border-radius: 100px;
+}
+
+ .banner-style::after{
+    content: '';
+    display: block;
+    clear: both;
+ }
+ /* #################### contact styling ############################### */
+ .contact-form{
+     padding: 5rem 0;
+     font-size: 2rem;
+     background: #f7f7f7;
+ }
+
+ .pubg-skills .required{ 
+    height: 760px;
+    background: #fff;
+    float: left;
+    width: 49%;
+    padding:1rem;
+    padding-bottom: 0%;
+ }
+
+ .pubg-skills::after{
+     content: '';
+     display: block;
+     clear: both;
+ }
+
+ .pubg-skills .form{
+     height: 760px;
+    font-size: 1.6rem;
+    background: #fff;
+    float: right;
+    width: 49%;
+    padding: 1rem;
+    }
+
+ .pubg-skills .required i{
+     display: inline-block;
+     margin-right: 1rem;
+
+ } 
+ 
+ .pubg-skills .required h2{
+    display: inline-block;
+    text-transform: uppercase;
+ }
+
+ .pubg-skills .required .image{
+     width: 95%;
+     height: 60%;
+    object-fit: cover;
+    object-position:right;
+ }
+
+ /* ################# form styling ###################### */
+
+ .form h1::after{
+     content: '';
+     display: block;
+     border: 2px solid #e63946;
+     width: 100%;
+ }
+ .pubg-skills{
+     display: block;
+ }
+
+ .pubg-skills .form input{
+     padding: 0.5rem;
+     width: 100%;
+ }
+ .pubg-skills .form .form-group{
+     margin-bottom: 1.2rem;
+ }
+
+ .pubg-skills .form textarea{
+     width: 100%;
+     height: 300px;
+     padding: 1rem;
+ }
+
+ .form-btn{
+     border: 2px solid #fff;
+     display: block;
+     margin: 0 auto;
+     padding: 0.5em 3em;
+     font-size: 1.8em;
+     text-transform: uppercase;
+     background: #e63946;
+     color: #fff;
+     cursor: pointer;
+     border-radius: 1.5em;
+ }
+
+ .form h1{
+     letter-spacing: 0.25em;
+ }
+
+ /* ########################## media query ######################### */
+
+ @media (max-width:350px){
+    :root{
+        font-size:45%;
+        margin: 1rem;
+    }
+
+    p{
+        font-size: 0.8rem;
+    }
+
+
+.navbar .nav-items , .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521);
+    }
+    .box2, .box3{
+        margin-top: 5rem;
+        width:100%;
+    }
+    .box-wrapper{
+        border-radius: 50px;
+        width: 100%;
+    }
+
+    .box-wrapper{
+       box-shadow:none;
+   }
+    
+   .banner-left, .banner-right{
+       float: none;
+       width: 100%;
+       text-align: center;
+   }
+   .banner-style{
+       border-radius:0px;
+   }
+   .btn-cta{
+       padding: 0.3em 1.5em;
+       letter-spacing: 0.3rem;
+   }
+   .shakya{
+       width: 100%;
+       height: 100%;
+   }
+   .btn-primary{
+       padding: 0.3em 1.5em;
+       letter-spacing: 0.3rem;
+   }
+
+   .contact-form .pubg-skills .required{
+       float: none;
+       width: 100%;
+       height: auto;
+       margin-bottom: 5rem;
+   }
+
+   .contact-form .pubg-skills .form{
+       float: none;
+       width: 100%;
+       height: auto;
+   }
+}
+
+
+ @media  (min-width:351px ) and (max-width:500px){
+     :root{
+         font-size:50%;
+         margin: 0%;
+     }
+
+     p{
+         font-size: 1.2rem;
+     }
+
+
+.navbar .nav-items , .navbar .logo{
+         float: none;
+         display: block;
+         width: 100%;
+         text-align: center;
+     }
+
+     .row{
+         height: auto;
+         width: 100%;
+     }
+
+     .row .img-box,
+     .row .text-box{
+         float: none;
+         width: 100%;
+         text-align: center;
+     }
+
+     .features .box{
+         float: none;
+         width: 100%;
+         height: auto;
+         text-align: center;
+         border-radius: 50px;
+         box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521);
+     }
+     .box2, .box3{
+         margin-top: 5rem;
+         width:100%;
+     }
+     .box-wrapper{
+         border-radius: 50px;
+         width: 100%;
+     }
+
+     .box-wrapper{
+        box-shadow:none;
+    }
+     
+    .banner-left, .banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .banner-style{
+        border-radius:0px;
+    }
+    .btn-cta{
+        padding: 0.3em 1.5em;
+        letter-spacing: 0.3rem;
+    }
+    .shakya{
+        width: 100%;
+        height: 100%;
+    }
+    .btn-primary{
+        padding: 0.3em 1.5em;
+        letter-spacing: 0.3rem;
+    }
+
+    .contact-form .pubg-skills .required{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .contact-form .pubg-skills .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+ }
+
+ /* ################# media query more than 500px ######################## */
+
+ @media (min-width:501px) and (max-width:768px){
+    :root{
+        font-size:50%;
+        margin: 0%;
+    } 
+    p{
+        font-size: 2.6rem;
+    }
+
+.navbar .nav-items , .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521);
+    }
+    .box2, .box3{
+        margin-top: 5rem;
+        width:100%;
+    }
+    .box-wrapper{
+        border-radius: 50px;
+        width: 100%;
+    }
+
+    .box-wrapper{
+       box-shadow:none;
+   }
+    
+   .banner-left, .banner-right{
+       float: none;
+       width: 100%;
+       text-align: center;
+   }
+   .banner-style{
+       border-radius:0px;
+   }
+   .btn-cta{
+       padding: 0.3em 2.2em;
+       letter-spacing: 0.4rem;
+   }
+   .shakya{
+       width: 100%;
+       height: 100%;
+   }
+   .btn-primary{
+       padding: 0.3em 2.2em;
+       letter-spacing: 0.4rem;
+   }
+
+   .contact-form .pubg-skills .required{
+       float: none;
+       width: 100%;
+       height: auto;
+       margin-bottom: 5rem;
+   }
+
+   .contact-form .pubg-skills .form{
+       float: none;
+       width: 100%;
+       height: auto;
+   }
+}
+
+/* ########################## media query more than 768px ##################### */
+@media(min-width:769px) and (max-width:1200px){
+    :root{
+        font-size: 57%;
+    }
+}
+
+/* ###################### horizontal media query #################### */
+
+ @media(orientation: landscape ) and (min-height:351px) and (max-height:500px){
+    .header{
+        height: 90vmax;
+    }
+} 
+
+@media(orientation: landscape) and (max-height:350px){
+    .header{
+        height: 100vmax;
+    }
+}
